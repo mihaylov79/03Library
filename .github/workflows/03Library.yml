@@ -33,8 +33,8 @@ jobs:
     - name: Build 03Library App
       run: npm run build --if-present
     - name: Start Backend Server
-      run: npm run server
+      run: npm run server &
     - name: Start FrontEnd
-      run: npm run start
+      run: npm run start &
     - name: Run Tests
       run: npm test
